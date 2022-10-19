@@ -8,8 +8,9 @@ on :push
 trigger:main
 
 variables:
-  # Azure Resource Manager connection created during pipeline creation
   azureServiceConnectionId: '20858b90-cde6-4fe3-844f-741fda39cf99'
+  # Azure Resource Manager connection created during pipeline creation
+  
 
   # Web app name
   webAppName: 'ay-flask-ml-service'
