@@ -3,10 +3,10 @@
 # Change python version to one thats appropriate for your application.
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
-on: push
+on :push
 
 trigger:
-  - main
+- main
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
@@ -17,7 +17,8 @@ variables:
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
-
+  pool: 'mypool'
+  # Environment name
   environmentName: 'ay-flask-ml-service'
 
   # Project root folder. Point to the folder containing manage.py file.
@@ -27,8 +28,9 @@ variables:
   pythonVersion: '3.7'
   
   
-pool:
-    vmImage: $(vmImageName)
+
+##    pool:
+    ##  vmImage: $(vmImageName)
 
 
 stages:
@@ -36,8 +38,8 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool: 
-      vmImage: $(vmImageName)
+    pool: 'mypool'
+      ##vmImage: $(vmImageName)
     steps:
     - task: UsePythonVersion@0
       displayName: 'Use Python $(pythonVersion)'
@@ -57,7 +59,7 @@ stages:
         python3.7 -m venv antenv
         source antenv/bin/activate
         python3.7 -m pip install --upgrade pip
-        python3.7 -m pip install setup
+        pip install setup
         pip install -r requirements.txt
       workingDirectory: $(projectRoot)
       displayName: "Install requirements"
@@ -81,8 +83,8 @@ stages:
   condition: succeeded()
   jobs:
   - deployment: DeploymentJob
-    pool:
-      vmImage: $(vmImageName)
+    pool: 'mypool'
+      ##vmImage: $(vmImageName)
     environment: $(environmentName)
     strategy:
       runOnce:
@@ -100,4 +102,3 @@ stages:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
-
