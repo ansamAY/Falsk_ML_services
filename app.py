@@ -14,7 +14,7 @@ def scale(payload):
     """Scales Payload"""
 
     LOG.info("Scaling Payload: %s payload")
-    scaler = StandardScaler(with_mean=Falsee).fit(payload)
+    scaler = StandardScaler(with_mean=False).fit(payload)
     scaled_adhoc_predict = scaler.transform(payload)
     return scaled_adhoc_predict
 
@@ -55,7 +55,7 @@ def predict():
     """
 
     try:
-        clf[0][0] = joblib.load("boston_housing_prediction.joblib")
+        clf[0][0]= joblib.load("boston_housing_prediction.joblib")
     except:
         LOG.info("JSON payload: %s json_payload")
         return "Model not loaded"
