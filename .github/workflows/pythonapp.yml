@@ -3,9 +3,10 @@
 # Change python version to one thats appropriate for your application.
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
-on :push
 
-trigger:main
+on: push 
+
+trigger: main
 
 variables:
   azureServiceConnectionId: '20858b90-cde6-4fe3-844f-741fda39cf99'
