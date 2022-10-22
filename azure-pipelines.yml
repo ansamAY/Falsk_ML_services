@@ -27,8 +27,7 @@ variables:
   
   
 
-  pool:
-      vmImage: $(vmImageName)
+  pool:vmImage: $(vmImageName)
 
 
 stages:
