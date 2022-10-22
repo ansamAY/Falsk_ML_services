@@ -8,7 +8,8 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: 'c761712a-772e-4832-b4d5-73b3a4b12e0b'
+  azureServiceConnectionId: 'UdacityDS - 85 (c761712a-772e-4832-b4d5-73b3a4b12e0b)'
+  ##'c761712a-772e-4832-b4d5-73b3a4b12e0b'
 
   # Web app name
   webAppName: 'ay-webapp-ml'
