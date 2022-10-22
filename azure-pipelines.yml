@@ -15,7 +15,7 @@ variables:
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
- # pool: 'mypool'
+  #pool: 'mypool'
   # Environment name
   environmentName: 'mypool'
 
@@ -27,7 +27,7 @@ variables:
   
   
 
-    pool:
+  pool:0
       vmImage: $(vmImageName)
 
 
@@ -36,7 +36,7 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool:
+    pool: 
       vmImage: $(vmImageName)
     steps:
     - task: UsePythonVersion@0
