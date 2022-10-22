@@ -27,7 +27,7 @@ variables:
   
   
 
-  pool:0
+  pool:
     vmImage: $(vmImageName)
 
 
