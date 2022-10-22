@@ -28,7 +28,8 @@ variables:
   
   
 
-  pool:'mypool'
+  pool: 'mypool'
+  
   #vmImage: $(vmImageName)
 
 
@@ -37,7 +38,7 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool:'mypool'
+    pool: 'mypool'
       #vmImage: $(vmImageName)
     steps:
     - task: UsePythonVersion@0
