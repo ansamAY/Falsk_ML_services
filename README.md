@@ -5,7 +5,7 @@ In this project, We will build a Github repository from scratch and create a sca
 ## Project Plan
 <TODO: Project Plan
 
-* A link to a Trello board for the project
+* [A link to a Trello board for the project](https://trello.com/b/85S9Cc1Z/planning)
 * A link to a spreadsheet that includes the original and final project plan>
 
 ## Instructions
