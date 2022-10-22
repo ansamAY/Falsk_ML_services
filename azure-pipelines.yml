@@ -15,7 +15,7 @@ variables:
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
-  pool: 'mypool'
+  pool: 'Default'
   # Environment name
   environmentName: 'mypool'
 
@@ -37,7 +37,7 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool: 'mypool'
+    pool: 'Default'
       #vmImage: $(vmImageName)
     steps:
     - task: UsePythonVersion@0
@@ -82,7 +82,7 @@ stages:
   condition: succeeded()
   jobs:
   - deployment: DeploymentJob
-    pool: 'mypool'
+    pool: 'Default'
       #vmImage: $(vmImageName)
     environment: $(environmentName)
     strategy:
