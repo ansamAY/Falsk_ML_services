@@ -15,7 +15,7 @@ variables:
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
-  #pool: 'mypool'
+  pool: 'mypool'
   # Environment name
   environmentName: 'mypool'
 
@@ -27,8 +27,8 @@ variables:
   
   
 
-  pool:
-    vmImage: $(vmImageName)
+  ##pool:
+    ##vmImage: $(vmImageName)
 
 
 stages:
@@ -81,8 +81,8 @@ stages:
   condition: succeeded()
   jobs:
   - deployment: DeploymentJob
-    pool: 
-      vmImage: $(vmImageName)
+    pool:'mypool' 
+      #vmImage: $(vmImageName)
     environment: $(environmentName)
     strategy:
       runOnce:
