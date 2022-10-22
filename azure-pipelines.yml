@@ -1,102 +1,43 @@
-# Python to Linux Web App on Azure
-# Build your Python project and deploy it to Azure as a Linux Web App.
-# Change python version to one thats appropriate for your application.
-# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+# This is a basic workflow to help you get started with Actions
 
-trigger:
-- main
+name: CI
 
-variables:
-  # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: 'e2bf10f5-b611-44c7-9617-4a26610fc460'
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 
-  # Web app name
-  webAppName: 'ay-webapp-ml'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
-  # Agent VM image name
-  vmImageName: 'ubuntu-latest'
-  pool: 'mypool'
-  # Environment name
-  environmentName: 'mypool'
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
-  # Project root folder. Point to the folder containing manage.py file.
-  projectRoot: $(System.DefaultWorkingDirectory)
-
-  # Python version: 3.6
-  pythonVersion: '3.7'
-  
-  
-
-  ##pool:
-    ##vmImage: $(vmImageName)
-
-
-stages:
-- stage: Build
-  displayName: Build stage
-  jobs:
-  - job: BuildJob
-    pool: 
-      vmImage: $(vmImageName)
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - task: UsePythonVersion@0
-      displayName: 'Use Python $(pythonVersion)'
-      inputs:
-        versionSpec: '$(pythonVersion)' 
-        addToPath: true 
-        architecture: 'x64' # Options: x86, x64 (this argument applies only on Windows agents)
-   ## - task: UsePythonVersion@0
-    ##  inputs:
-      #Run actions/setup-python@v2.2.2
-    #    python-version: 3.7
-    #    architecture: x64
-        
-       # versionSpec: '$(pythonVersion)'
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Set up Python 3.6
+        uses: actions/setup-python@v1
+        with:
+         python-version: 3.6
+      - name: Install dependencies
+        run: |
+          make install
+      - name: Lint with pylint
+        run: |
+          make lint
+      - name: Test with pytest
+        run: |
+          make test
+
       
-    - script: 
-        python3.7 -m venv antenv
-        source antenv/bin/activate
-        python3.7 -m pip install --upgrade pip
-        pip install setup
-        pip install -r requirements.txt
-      workingDirectory: $(projectRoot)
-      displayName: "Install requirements"
-
-    - task: ArchiveFiles@2
-      displayName: 'Archive files'
-      inputs:
-        rootFolderOrFile: '$(projectRoot)'
-        includeRootFolder: false
-        archiveType: zip
-        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-        replaceExistingArchive: true
-
-    - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-      displayName: 'Upload package'
-      artifact: drop
-
-- stage: Deploy
-  displayName: 'Deploy Web App'
-  dependsOn: Build
-  condition: succeeded()
-  jobs:
-  - deployment: DeploymentJob
-    pool:'mypool' 
-      #vmImage: $(vmImageName)
-    environment: $(environmentName)
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-
-          - task: UsePythonVersion@0
-            inputs:
-              versionSpec: '$(pythonVersion)'
-            displayName: 'Use Python version'
-
-          - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : ay-webapp-ml'
-            inputs:
-              azureSubscription: $(azureServiceConnectionId)
-              appName: $(webAppName)
-              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
