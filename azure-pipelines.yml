@@ -57,7 +57,7 @@ stages:
        # versionSpec: '$(pythonVersion)'
       
     - script: 
-        python -m venv antenv
+        python venv antenv
         source antenv/bin/activate
         pip install --upgrade pip
         pip install setup
