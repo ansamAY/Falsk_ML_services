@@ -15,7 +15,9 @@ In this project,We will deploy webapp azure service with ML code to predict pric
 * Project running on Azure App Service
 
 * Project cloned into Azure Cloud Shell
+
  ```git clone git@github.com:ansamAY/Falsk_ML_services.git
+ 
 * ![ScreenShot_Git_Clone](https://user-images.githubusercontent.com/19666746/197641851-a86c1296-a4f8-4455-bd6b-abf6cadd6558.PNG)
 
 
