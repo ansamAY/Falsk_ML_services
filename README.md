@@ -10,7 +10,6 @@ In this project,We will deploy webapp azure service with ML code to predict pric
 
 ![image](https://user-images.githubusercontent.com/19666746/197639382-663672d9-966e-4c04-9c6a-3e5a22cf7792.png)
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
 * Project running on Azure App Service
 
@@ -25,6 +24,10 @@ In this project,We will deploy webapp azure service with ML code to predict pric
 
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
+```
+make all
+```
+
 * ![ScreenShot_passed_testfile](https://user-images.githubusercontent.com/19666746/197641925-46104b27-3706-4238-82fa-aa43a906a7de.PNG)
 
 
