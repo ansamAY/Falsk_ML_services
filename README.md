@@ -38,6 +38,11 @@ make all
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 * ![ScreenShot_passed_GtHubAction](https://user-images.githubusercontent.com/19666746/197643717-6cba8692-43f4-44ed-9a50-604311880b54.PNG)
 
+* Make sure that webapp service is up and working if you go to the link of your webapp and found it like this
+
+![image](https://user-images.githubusercontent.com/19666746/197645035-2005a818-6b40-4588-bec1-250db29d9616.png)
+
+
 
 * Running Azure App Service from Azure Pipelines automatic deployment
 
