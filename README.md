@@ -23,8 +23,12 @@ In this project,We will deploy webapp azure service with ML code to predict pric
 
 
 * Output of a test run
+* ![ScreenShot_passed_testfile](https://user-images.githubusercontent.com/19666746/197643775-ba8bbfb6-49c5-4606-a619-0bab6e31a84e.PNG)
+
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+* ![ScreenShot_passed_GtHubAction](https://user-images.githubusercontent.com/19666746/197643717-6cba8692-43f4-44ed-9a50-604311880b54.PNG)
+
 
 * Running Azure App Service from Azure Pipelines automatic deployment
 
