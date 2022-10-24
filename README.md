@@ -42,7 +42,9 @@ Port: 443
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+- Static code analysis can be introduced to the pipeline to check the code against any vulnerabilities and detect bugs. Sonarqube can be added to the pipeline play this role.
+
+- Code can be moved to Azure repos to make good use of Azure DevOps as a complete platform, then no need to integrate third parties(github) to store our code.
 
 ## Demo 
 
