@@ -10,8 +10,7 @@ In this project, We will build a Github repository from scratch and create a sca
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+![image](https://user-images.githubusercontent.com/19666746/197639382-663672d9-966e-4c04-9c6a-3e5a22cf7792.png)
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
