@@ -1,10 +1,8 @@
 # Overview
 
-In this project, We will build a Github repository from scratch and create a scaffolding that will assist in performing both Continuous Integration and Continuous Delivery. We'll use Github Actions along with a Makefile, requirements.txt and application code to perform an initial lint, test, and install cycle. Next, We'll integrate this project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
+In this project,We will deploy webapp azure service with ML code to predict price of housing. We will build a Github repository from scratch and create a scaffolding that will assist in performing both Continuous Integration and Continuous Delivery. We'll use Github Actions along with a Makefile, requirements.txt and application code to perform an initial lint, test, and install cycle. Next, We'll integrate this project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
 
 ## Project Plan
-<TODO: Project Plan
-
 * [A link to a Trello board for the project](https://trello.com/b/85S9Cc1Z/planning)
 * A link to a spreadsheet that includes the original and final project plan>
 
@@ -17,8 +15,12 @@ In this project, We will build a Github repository from scratch and create a sca
 * Project running on Azure App Service
 
 * Project cloned into Azure Cloud Shell
+* ![ScreenShot_Git_Clone](https://user-images.githubusercontent.com/19666746/197641851-a86c1296-a4f8-4455-bd6b-abf6cadd6558.PNG)
+
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
+* ![ScreenShot_passed_testfile](https://user-images.githubusercontent.com/19666746/197641925-46104b27-3706-4238-82fa-aa43a906a7de.PNG)
+
 
 * Output of a test run
 
