@@ -32,11 +32,15 @@ make all
 
 
 * Output of a test run
-* ![ScreenShot_passed_testfile](https://user-images.githubusercontent.com/19666746/197643775-ba8bbfb6-49c5-4606-a619-0bab6e31a84e.PNG)
+ ![ScreenShot_passed_testfile](https://user-images.githubusercontent.com/19666746/197643775-ba8bbfb6-49c5-4606-a619-0bab6e31a84e.PNG)
 
+*Use GitHub Actions to test and lint a project while writing code.
+[![Python application test with Github Actions](https://github.com/ansamAY/udacity_project_6/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/ansamAY/udacity_project_6/actions/workflows/pythonapp.yml)
+
+![ScreenShot_passed_GtHubAction](https://user-images.githubusercontent.com/19666746/197643717-6cba8692-43f4-44ed-9a50-604311880b54.PNG)
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
-* ![ScreenShot_passed_GtHubAction](https://user-images.githubusercontent.com/19666746/197643717-6cba8692-43f4-44ed-9a50-604311880b54.PNG)
+
 
 * Make sure that webapp service is up and working if you go to the link of your webapp and found it like this
 
