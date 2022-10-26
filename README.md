@@ -32,7 +32,8 @@ make all
 
 
 * Output of a test run
- ![ScreenShot_passed_testfile](https://user-images.githubusercontent.com/19666746/197643775-ba8bbfb6-49c5-4606-a619-0bab6e31a84e.PNG)
+ ![image](https://user-images.githubusercontent.com/19666746/198050049-5c60ccff-ea38-4ecb-8591-0812b4a4d258.png)
+
 
 *Use GitHub Actions to test and lint a project while writing code.
 
