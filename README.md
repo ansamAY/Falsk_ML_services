@@ -28,7 +28,7 @@ In this project,We will deploy webapp azure service with python code to predict 
 make all
 ```
 
-![image](https://user-images.githubusercontent.com/19666746/198050296-6d19a25b-e20c-46f8-a027-d5766bd97fb4.png)
+ ![image](https://user-images.githubusercontent.com/19666746/198050296-6d19a25b-e20c-46f8-a027-d5766bd97fb4.png)
 
 
 * Output of a test run
