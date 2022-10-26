@@ -18,9 +18,9 @@ In this project,We will deploy webapp azure service with python code to predict 
  ```
  git clone git@github.com:ansamAY/Falsk_ML_services.git
  ```
- and the output must be like this
+  and the output must be like this
  
-* ![ScreenShot_Git_Clone](https://user-images.githubusercontent.com/19666746/197641851-a86c1296-a4f8-4455-bd6b-abf6cadd6558.PNG)
+ ![ScreenShot_Git_Clone](https://user-images.githubusercontent.com/19666746/197641851-a86c1296-a4f8-4455-bd6b-abf6cadd6558.PNG)
 
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
