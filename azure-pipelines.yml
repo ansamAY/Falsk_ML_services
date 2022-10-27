@@ -42,12 +42,6 @@ stages:
     pool: 'Default'
       #vmImage: $(vmImageName)
     steps:
-    - task: UsePythonVersion@0
-      displayName: 'Use Python $(pythonVersion)'
-      inputs:
-        versionSpec: '$(pythonVersion)' 
-        addToPath: true 
-        architecture: 'x64' # Options: x86, x64 (this argument applies only on Windows agents)
    ## - task: UsePythonVersion@0
     ##  inputs:
       #Run actions/setup-python@v2.2.2
@@ -57,9 +51,9 @@ stages:
        # versionSpec: '$(pythonVersion)'
       
     - script: 
-        python -h pip install --upgrade pip
-        python -h pip install setup
-        python -h pip install -r requirements.txt
+        python -m pip install --upgrade pip
+        python -m pip install setup
+        python -m pip install -r requirements.txt
         
       workingDirectory: $(projectRoot)
       displayName: "Install requirements"
