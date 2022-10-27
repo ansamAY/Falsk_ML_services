@@ -57,9 +57,9 @@ stages:
        # versionSpec: '$(pythonVersion)'
       
     - script: 
-        python3.7 -m pip install --upgrade pip
-        python3.7 -m pip install setup
-        python3.7 -m pip install -r requirements.txt
+        py3.7 -m pip install --upgrade pip
+        py3.7 -m pip install setup
+        py3.7 -m pip install -r requirements.txt
         
       workingDirectory: $(projectRoot)
       displayName: "Install requirements"
