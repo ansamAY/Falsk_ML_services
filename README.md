@@ -12,6 +12,8 @@ In this project,We will deploy webapp azure service with python code to predict 
 
 
 * Project running on Azure App Service
+![image](https://user-images.githubusercontent.com/19666746/198250967-97bed055-5407-4b74-9958-bb7e0ae805ef.png)
+
 
 * Project cloned into Azure Cloud Shell
 
