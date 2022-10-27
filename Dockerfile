@@ -10,7 +10,7 @@ COPY . app.py /app/
 # hadolint ignore=DL3013
 
 
-RUN pip install -U virtualenv==16.7.9 &&\
+RUN
     pip install --upgrade pip &&\
     pip install --trusted-host pypi.python.org -r requirements.txt
 
