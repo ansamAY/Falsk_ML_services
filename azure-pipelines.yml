@@ -58,9 +58,9 @@ stages:
        # versionSpec: '$(pythonVersion)'
       
     - script: 
-        python -m pip install --upgrade pip
-        python -m pip install setup
-        python -m pip install -r requirements.txt
+        python3.7 -m pip install --upgrade pip
+        python3.7 -m pip install setup
+        python3.7 -m pip install -r requirements.txt
       workingDirectory: $(projectRoot)
       displayName: "Install requirements"
 
@@ -94,7 +94,7 @@ stages:
           - task: UsePythonVersion@0
             inputs:
               versionSpec: '$(pythonVersion)'
-            displayName: 'Use Python version'
+            diplayName: 'Use Python version'
 
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App : ay-webapp-ml'
