@@ -3,8 +3,8 @@
 In this project,We will deploy webapp azure service with python code to predict price of housing. We will build a Github repository from scratch and create a scaffolding that will assist in performing both Continuous Integration and Continuous Delivery. We'll use Github Actions along with a Makefile, requirements.txt and application code to perform an initial lint, test, and install cycle. Next, We'll integrate this project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
 
 ## Project Plan
-* [A link to a Trello board for the project](https://trello.com/b/85S9Cc1Z/planning)
-* A link to a spreadsheet> [project-management.xlsx](https://github.com/ansamAY/Falsk_ML_services/blob/main/project-management.xlsx)
+* (https://trello.com/b/85S9Cc1Z/planning)
+* [project-management.xlsx](https://github.com/ansamAY/Falsk_ML_services/blob/main/project-management.xlsx)
 
 ## Instructions
 
