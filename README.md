@@ -48,6 +48,7 @@ make all
 ![ScreenShot_passed_GtHubAction](https://user-images.githubusercontent.com/19666746/197643717-6cba8692-43f4-44ed-9a50-604311880b54.PNG)
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+![image](https://user-images.githubusercontent.com/19666746/198433353-aec6559e-1a39-48b9-b8ae-1aa064d88610.png)
 
 
 * Make sure that webapp service is up and working if you go to the link of your webapp and found it like this
@@ -57,6 +58,8 @@ make all
 
 
 * Running Azure App Service from Azure Pipelines automatic deployment
+![image](https://user-images.githubusercontent.com/19666746/198433506-491735ec-ddfb-477d-b38e-c35de64e7bf1.png)
+
 
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
 The output should look similar to this:
