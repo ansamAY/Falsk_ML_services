@@ -4,7 +4,7 @@ In this project,We will deploy webapp azure service with python code to predict 
 
 ## Project Plan
 * [A link to a Trello board for the project](https://trello.com/b/85S9Cc1Z/planning)
-* A link to a spreadsheet that includes the original and final project plan> project-management.xlsx
+* A link to a spreadsheet that includes the original and final project plan> [project-management.xlsx](https://github.com/ansamAY/Falsk_ML_services/blob/main/project-management.xlsx)
 
 ## Instructions
 
