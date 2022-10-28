@@ -78,6 +78,8 @@ https://dev.azure.com/ansamkhalil93/Flask_ml_Service_app/_build/results?buildId=
 
 *locust load test 
 ![image](https://user-images.githubusercontent.com/19666746/198749649-40733acb-e086-4462-84f2-f90214c96253.png)
+![image](https://user-images.githubusercontent.com/19666746/198750362-ec0ee3c2-b743-45e3-abbb-7140e5aa3015.png)
+
 
 > 
 
