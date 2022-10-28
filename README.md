@@ -73,6 +73,10 @@ Port: 443
 
 
 * Output of streamed log files from deployed application
+https://dev.azure.com/ansamkhalil93/Flask_ml_Service_app/_build/results?buildId=27&view=logs&j=eed83684-fd3b-5bd6-4bb2-01ee65c52a09&t=160533ec-0c9c-559a-1e3b-14b7f6ef3bf5&l=11
+
+![image](https://user-images.githubusercontent.com/19666746/198434866-1fd6ab60-6673-4e1f-b0ce-08aaaf6a91e8.png)
+
 
 > 
 
